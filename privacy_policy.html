@@ -3,15 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인정보처리방침</title>
+    <title>Runboard 개인정보처리방침 (Privacy Policy)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #111;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; margin-top: 40px;}
+        strong { color: #007AFF; }
+        .summary {
+            background-color: #e7f3ff;
+            border-left: 5px solid #007AFF;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .version-info {
+            text-align: right;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .lang-toggle {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-toggle button {
+            background: none;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .lang-toggle .active {
+            background-color: #007AFF;
+            color: white;
+            border-color: #007AFF;
+        }
+        .en { display: none; } /* Initially hide English */
+    </style>
 </head>
 <body>
-    <h1>FINISHitNOW 개인정보처리방침</h1>
-    <p>FINISHitNOW는 개인정보를 수집하거나 저장하지 않습니다.</p>
-    <h2>1. 개인정보 수집</h2>
-    <p>저장소 접근 권한은 앱 데이터 백업 및 복원을 위해 사용됩니다.</p>
-    <h2>2. 개인정보 보호책임자</h2>
-    <p>담당자: CodeInteriorLab</p>
-    <p>이메일: codeinteriorlab@amaredesign.kr</p>
+    <div class="version-info">
+        <p>시행일자: 2025년 9월 22일</p>
+        <p>버전: 1.1</p>
+    </div>
+
+    <h1>Runboard 개인정보처리방침</h1>
+
+    <div class="lang-toggle">
+        <button id="btn-ko" class="active" onclick="showLang('ko')">한국어</button>
+        <button id="btn-en" onclick="showLang('en')">English</button>
+    </div>
+
+    <div class="ko">
+        <div class="summary">
+            <h3>핵심 요약: 당신의 데이터는 당신의 것입니다.</h3>
+            <p>Runboard는 당신의 프라이버시를 최우선으로 생각합니다. 저희는 당신의 개인정보를 <strong>서버에 절대 저장하거나 전송하지 않으며, 제3자에게 판매하거나 공유하지 않습니다.</strong> 모든 데이터는 오직 당신의 기기 안에서만 처리됩니다.</p>
+        </div>
+
+        <h2>1. 수집 및 처리하는 정보</h2>
+        <p>Runboard는 서비스 제공을 위해 아래와 같은 정보를 사용자의 기기 내에서만 처리합니다.</p>
+        <ul>
+            <li><strong>GPX 파일 데이터:</strong> 사용자가 직접 선택하여 불러온 GPX 파일에 포함된 <strong>위치, 시간, 고도, 심박수, 케이던스</strong> 등의 운동 기록. 이 정보는 오직 기록을 시각화하여 보여주는 목적으로만 사용됩니다.</li>
+            <li><strong>사용자 프로필 정보 (선택 사항):</strong> 칼로리 계산의 정확도를 높이기 위해 사용자가 직접 입력하는 <strong>나이, 체중, 성별</strong> 정보. 이 정보는 기기 내부에만 저장되며, 원치 않을 경우 입력하지 않아도 앱 사용에 지장이 없습니다.</li>
+            <li><strong>갤러리 사진 (선택 사항):</strong> 사용자가 'My Picture' 테마를 사용할 경우, 갤러리에서 직접 선택한 사진. 이 사진은 공유 이미지를 생성하는 용도로만 사용되며, 앱 내에 별도로 저장되거나 외부로 전송되지 않습니다.</li>
+        </ul>
+
+        <h2>2. 정보 수집 목적</h2>
+        <ul>
+            <li><strong>GPX 데이터 시각화:</strong> 불러온 운동 기록을 다양한 테마로 아름답게 보여주고, 공유 가능한 이미지로 만들기 위해 사용합니다.</li>
+            <li><strong>정확한 운동 정보 계산:</strong> 사용자 프로필 정보를 바탕으로 더 정확한 소모 칼로리를 계산하기 위해 사용합니다.</li>
+        </ul>
+        
+        <h2>3. 권한 요청 목적</h2>
+        <p>Runboard는 원활한 기능 제공을 위해 다음과 같은 권한을 요청할 수 있으며, 이는 사용자가 해당 기능을 사용할 때만 활성화됩니다.</p>
+        <ul>
+            <li><strong>저장 공간/미디어 접근 권한:</strong> 사용자가 GPX 파일을 선택하거나 'My Picture' 테마에 사용할 사진을 불러올 때 필요합니다. Runboard는 사용자가 선택한 파일 외에 다른 파일에는 접근하지 않습니다.</li>
+            <li><strong>위치 정보 접근 권한:</strong> 향후 앱 자체의 달리기 기록 기능을 위해 포함될 수 있으나, 현재 버전에서는 사용자의 GPX 파일 분석 외에 실시간으로 위치를 추적하거나 수집하지 않습니다.</li>
+        </ul>
+
+        <h2>4. 정보의 보유 및 이용 기간</h2>
+        <p>Runboard는 사용자의 개인정보를 <strong>서버에 보관하지 않으므로</strong> 별도의 보유 기간이 없습니다. 공유 기능을 위해 생성된 임시 이미지 파일은 공유 직후 또는 앱 종료 시 자동으로 삭제됩니다. 나머지 모든 데이터는 사용자가 앱을 삭제하면 기기에서 함께 영구적으로 삭제됩니다.</p>
+
+        <h2>5. 개인정보의 제3자 제공</h2>
+        <p>Runboard는 당신의 개인정보를 절대로 제3자에게 판매하거나 제공하지 않습니다. 광고 회사와의 데이터 공유 또한 일절 없습니다.</p>
+        
+        <h2>6. 인앱 구매</h2>
+        <p>앱 내 일부 프리미엄 테마는 유료로 제공될 수 있습니다. 결제는 Google Play 스토어를 통해 처리되며, Runboard는 사용자의 신용카드 정보나 결제 정보를 수집 또는 저장하지 않습니다.</p>
+
+        <h2>7. 사용자의 권리</h2>
+        <p>모든 정보는 사용자의 기기에만 존재하므로, 사용자는 언제든지 앱을 삭제함으로써 모든 데이터를 영구적으로 파기할 수 있습니다.</p>
+
+        <h2>8. 13세 미만 아동에 대한 정책</h2>
+        <p>Runboard는 만 13세 미만 아동의 사용을 의도하지 않으며, 고의로 해당 연령의 개인정보를 수집하지 않습니다.</p>
+
+        <h2>9. 개인정보처리방침 변경</h2>
+        <p>본 방침이 변경될 경우, 앱 내 공지나 기타 합리적인 방법을 통해 사용자에게 알릴 것입니다.</p>
+
+        <h2>10. 문의처</h2>
+        <p>개인정보 관련 문의는 아래 연락처로 주시기 바랍니다.<br>
+        - 이메일: [여기에 당신의 이메일 주소를 입력하세요]</p>
+    </div>
+
+    <div class="en">
+        <div class="summary">
+            <h3>Key Summary: Your Data is Yours.</h3>
+            <p>Runboard puts your privacy first. We <strong>never store or transmit your personal data to our servers, and we never sell or share it with third parties.</strong> All data is processed solely on your device.</p>
+        </div>
+
+        <h2>1. Information We Process</h2>
+        <p>Runboard processes the following information only within your device to provide its services.</p>
+        <ul>
+            <li><strong>GPX File Data:</strong> Workout records from the GPX files you choose to import, including <strong>location, time, elevation, heart rate, and cadence.</strong> This data is used only to visualize your records.</li>
+            <li><strong>User Profile (Optional):</strong> Your <strong>age, weight, and gender,</strong> which you can provide to improve calorie calculation accuracy. This information is stored only on your device, and you can use the app without providing it.</li>
+            <li><strong>Gallery Photos (Optional):</strong> A photo you select from your gallery when using the 'My Picture' theme. This photo is used only to generate the shareable image and is not stored within the app or transmitted externally.</li>
+        </ul>
+
+        <h2>2. Purpose of Data Processing</h2>
+        <ul>
+            <li><strong>GPX Data Visualization:</strong> To display your imported workout records in various beautiful themes and create shareable images.</li>
+            <li><strong>Accurate Workout Calculation:</strong> To calculate more accurate calorie burn based on your user profile.</li>
+        </ul>
+
+        <h2>3. Permission Requests</h2>
+        <p>Runboard may request the following permissions to provide its features, which are only activated when you use the corresponding feature.</p>
+        <ul>
+            <li><strong>Storage/Media Access:</strong> Required to let you select GPX files and choose a photo for the 'My Picture' theme. Runboard does not access any files other than the ones you explicitly select.</li>
+            <li><strong>Location Access:</strong> May be included for future in-app tracking features. In the current version, Runboard does not track or collect your location in real-time; it is only used to process the data within your GPX files.</li>
+        </ul>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <p>Runboard does <strong>not store your data on any server,</strong> so there is no retention period. Temporary image files created for sharing are deleted immediately after sharing or when the app closes. All other data is permanently deleted from your device when you uninstall the app.</p>
+
+        <h2>5. Sharing of Personal Information</h2>
+        <p>Runboard will never sell or provide your personal information to third parties. We do not share data with any advertising companies.</p>
+
+        <h2>6. In-App Purchases</h2>
+        <p>Some premium themes within the app may be available for purchase. Payments are processed through the Google Play Store. Runboard does not collect or store any of your credit card or payment information.</p>
+        
+        <h2>7. User Rights</h2>
+        <p>Since all data resides only on your device, you can permanently delete all your data at any time by simply uninstalling the application.</p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>Runboard is not intended for use by children under the age of 13, and we do not knowingly collect personal information from them.</p>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>If this policy changes, we will notify users through an in-app notice or other reasonable methods.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions about your privacy, please contact us.<br>
+        - Email: [Enter Your Email Address Here]</p>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            if (lang === 'ko') {
+                document.querySelector('.ko').style.display = 'block';
+                document.querySelector('.en').style.display = 'none';
+                document.getElementById('btn-ko').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else {
+                document.querySelector('.ko').style.display = 'none';
+                document.querySelector('.en').style.display = 'block';
+                document.getElementById('btn-ko').classList.remove('active');
+                document.getElementById('btn-en').classList.add('active');
+            }
+        }
+    </script>
 </body>
-</html> 
+</html>
