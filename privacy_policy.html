@@ -29,6 +29,13 @@
             margin: 20px 0;
             border-radius: 5px;
         }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
         .version-info {
             text-align: right;
             color: #888;
@@ -55,8 +62,8 @@
 </head>
 <body>
     <div class="version-info">
-        <p>시행일자: 2025년 9월 22일</p>
-        <p>버전: 1.1</p>
+        <p>시행일자: 2025년 10월 9일</p>
+        <p>버전: 1.2</p>
     </div>
 
     <h1>Runboard 개인정보처리방침</h1>
@@ -67,10 +74,6 @@
     </div>
 
     <div class="ko">
-        <div class="summary">
-            <h3>핵심 요약: 당신의 데이터는 당신의 것입니다.</h3>
-            <p>Runboard는 당신의 프라이버시를 최우선으로 생각합니다. 저희는 당신의 개인정보를 <strong>서버에 절대 저장하거나 전송하지 않으며, 제3자에게 판매하거나 공유하지 않습니다.</strong> 모든 데이터는 오직 당신의 기기 안에서만 처리됩니다.</p>
-        </div>
 
         <h2>1. 수집 및 처리하는 정보</h2>
         <p>Runboard는 서비스 제공을 위해 아래와 같은 정보를 사용자의 기기 내에서만 처리합니다.</p>
@@ -84,6 +87,7 @@
         <ul>
             <li><strong>GPX 데이터 시각화:</strong> 불러온 운동 기록을 다양한 테마로 아름답게 보여주고, 공유 가능한 이미지로 만들기 위해 사용합니다.</li>
             <li><strong>정확한 운동 정보 계산:</strong> 사용자 프로필 정보를 바탕으로 더 정확한 소모 칼로리를 계산하기 위해 사용합니다.</li>
+            <li><strong>지도 표시:</strong> GPX 트랙을 지도에 시각화하여 운동 경로를 표시하기 위해 사용합니다.</li>
         </ul>
         
         <h2>3. 권한 요청 목적</h2>
@@ -91,6 +95,7 @@
         <ul>
             <li><strong>저장 공간/미디어 접근 권한:</strong> 사용자가 GPX 파일을 선택하거나 'My Picture' 테마에 사용할 사진을 불러올 때 필요합니다. Runboard는 사용자가 선택한 파일 외에 다른 파일에는 접근하지 않습니다.</li>
             <li><strong>위치 정보 접근 권한:</strong> 향후 앱 자체의 달리기 기록 기능을 위해 포함될 수 있으나, 현재 버전에서는 사용자의 GPX 파일 분석 외에 실시간으로 위치를 추적하거나 수집하지 않습니다.</li>
+            <li><strong>인터넷 접근 권한:</strong> Google Maps API를 통한 지도 표시를 위해 필요합니다.</li>
         </ul>
 
         <h2>4. 정보의 보유 및 이용 기간</h2>
@@ -98,29 +103,55 @@
 
         <h2>5. 개인정보의 제3자 제공</h2>
         <p>Runboard는 당신의 개인정보를 절대로 제3자에게 판매하거나 제공하지 않습니다. 광고 회사와의 데이터 공유 또한 일절 없습니다.</p>
+        <p><strong>단, 다음과 같은 예외가 있습니다:</strong></p>
+        <ul>
+            <li><strong>Google Maps API:</strong> 지도 표시 기능을 위해 Google과 데이터를 공유합니다 (자세한 내용은 아래 '제3자 서비스 이용' 섹션 참조).</li>
+        </ul>
         
-        <h2>6. 인앱 구매</h2>
+        <h2>6. 제3자 서비스 이용</h2>
+        <div class="warning">
+            <h3>Google Maps API 사용</h3>
+            <p>Runboard는 GPX 트랙을 지도에 시각화하기 위해 Google Maps API를 사용합니다. 이 과정에서 다음 정보가 Google로 전송될 수 있습니다:</p>
+            <ul>
+                <li><strong>GPX 트랙의 위도/경도 좌표</strong></li>
+                <li><strong>지도 표시 영역 및 줌 레벨</strong></li>
+                <li><strong>사용자의 IP 주소</strong></li>
+                <li><strong>기기 정보 (화면 해상도, 운영체제 등)</strong></li>
+            </ul>
+            <p>이러한 데이터 처리는 Google의 개인정보처리방침에 따라 처리됩니다: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+            <p>Google Maps 사용을 원하지 않을 경우, 지도 기능이 포함되지 않은 다른 테마를 사용하실 수 있습니다.</p>
+        </div>
+
+        <h2>7. 삼성헬스 관련 면책사항</h2>
+        <div class="warning">
+            <h3>중요한 고지사항</h3>
+            <ul>
+                <li><strong>독립성:</strong> 본 앱(Runboard)은 삼성전자주식회사와 공식적인 제휴, 협력, 승인 관계가 전혀 없는 독립적인 애플리케이션입니다.</li>
+                <li><strong>상표권:</strong> 삼성헬스(Samsung Health)는 삼성전자주식회사의 등록상표입니다. 본 앱에서의 삼성헬스 언급은 오직 GPX 파일 호환성 설명 목적으로만 사용됩니다.</li>
+                <li><strong>데이터 호환성:</strong> 삼성헬스에서 내보낸 GPX 파일의 호환성은 보장되지 않으며, 데이터 손실이나 오류에 대한 책임을 지지 않습니다.</li>
+                <li><strong>업데이트 영향:</strong> 삼성헬스의 업데이트나 정책 변경으로 인한 GPX 파일 형식 변경이나 호환성 문제에 대해서는 당사가 책임지지 않습니다.</li>
+                <li><strong>지원 범위:</strong> 삼성헬스 관련 문제는 삼성전자 고객지원센터로 문의하시기 바라며, 본 앱의 개발사는 삼성헬스와 관련된 기술적 지원을 제공할 수 없습니다.</li>
+            </ul>
+        </div>
+
+        <h2>8. 인앱 구매</h2>
         <p>앱 내 일부 프리미엄 테마는 유료로 제공될 수 있습니다. 결제는 Google Play 스토어를 통해 처리되며, Runboard는 사용자의 신용카드 정보나 결제 정보를 수집 또는 저장하지 않습니다.</p>
 
-        <h2>7. 사용자의 권리</h2>
+        <h2>9. 사용자의 권리</h2>
         <p>모든 정보는 사용자의 기기에만 존재하므로, 사용자는 언제든지 앱을 삭제함으로써 모든 데이터를 영구적으로 파기할 수 있습니다.</p>
 
-        <h2>8. 13세 미만 아동에 대한 정책</h2>
+        <h2>10. 13세 미만 아동에 대한 정책</h2>
         <p>Runboard는 만 13세 미만 아동의 사용을 의도하지 않으며, 고의로 해당 연령의 개인정보를 수집하지 않습니다.</p>
 
-        <h2>9. 개인정보처리방침 변경</h2>
+        <h2>11. 개인정보처리방침 변경</h2>
         <p>본 방침이 변경될 경우, 앱 내 공지나 기타 합리적인 방법을 통해 사용자에게 알릴 것입니다.</p>
 
-        <h2>10. 문의처</h2>
+        <h2>12. 문의처</h2>
         <p>개인정보 관련 문의는 아래 연락처로 주시기 바랍니다.<br>
         - 이메일: amaredesignkr@gmail.com</p>
     </div>
 
     <div class="en">
-        <div class="summary">
-            <h3>Key Summary: Your Data is Yours.</h3>
-            <p>Runboard puts your privacy first. We <strong>never store or transmit your personal data to our servers, and we never sell or share it with third parties.</strong> All data is processed solely on your device.</p>
-        </div>
 
         <h2>1. Information We Process</h2>
         <p>Runboard processes the following information only within your device to provide its services.</p>
@@ -134,6 +165,7 @@
         <ul>
             <li><strong>GPX Data Visualization:</strong> To display your imported workout records in various beautiful themes and create shareable images.</li>
             <li><strong>Accurate Workout Calculation:</strong> To calculate more accurate calorie burn based on your user profile.</li>
+            <li><strong>Map Display:</strong> To visualize GPX tracks on maps and display workout routes.</li>
         </ul>
 
         <h2>3. Permission Requests</h2>
@@ -141,6 +173,7 @@
         <ul>
             <li><strong>Storage/Media Access:</strong> Required to let you select GPX files and choose a photo for the 'My Picture' theme. Runboard does not access any files other than the ones you explicitly select.</li>
             <li><strong>Location Access:</strong> May be included for future in-app tracking features. In the current version, Runboard does not track or collect your location in real-time; it is only used to process the data within your GPX files.</li>
+            <li><strong>Internet Access:</strong> Required for map display through Google Maps API.</li>
         </ul>
 
         <h2>4. Data Retention and Deletion</h2>
@@ -148,20 +181,50 @@
 
         <h2>5. Sharing of Personal Information</h2>
         <p>Runboard will never sell or provide your personal information to third parties. We do not share data with any advertising companies.</p>
+        <p><strong>However, there is the following exception:</strong></p>
+        <ul>
+            <li><strong>Google Maps API:</strong> We share data with Google for map display functionality (see 'Third-Party Services' section below for details).</li>
+        </ul>
 
-        <h2>6. In-App Purchases</h2>
+        <h2>6. Third-Party Services</h2>
+        <div class="warning">
+            <h3>Google Maps API Usage</h3>
+            <p>Runboard uses Google Maps API to visualize GPX tracks on maps. During this process, the following information may be transmitted to Google:</p>
+            <ul>
+                <li><strong>Latitude/longitude coordinates from GPX tracks</strong></li>
+                <li><strong>Map display area and zoom level</strong></li>
+                <li><strong>Your IP address</strong></li>
+                <li><strong>Device information (screen resolution, operating system, etc.)</strong></li>
+            </ul>
+            <p>This data processing is handled according to Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+            <p>If you prefer not to use Google Maps, you can use other themes that do not include map functionality.</p>
+        </div>
+
+        <h2>7. Samsung Health Disclaimer</h2>
+        <div class="warning">
+            <h3>Important Notice</h3>
+            <ul>
+                <li><strong>Independence:</strong> This app (Runboard) has no official partnership, cooperation, or endorsement relationship with Samsung Electronics Co., Ltd. and is an entirely independent application.</li>
+                <li><strong>Trademark:</strong> Samsung Health is a registered trademark of Samsung Electronics Co., Ltd. Any mention of Samsung Health in this app is used solely for the purpose of explaining GPX file compatibility.</li>
+                <li><strong>Data Compatibility:</strong> Compatibility of GPX files exported from Samsung Health is not guaranteed, and we assume no responsibility for data loss or errors.</li>
+                <li><strong>Update Impact:</strong> We are not responsible for GPX file format changes or compatibility issues caused by Samsung Health updates or policy changes.</li>
+                <li><strong>Support Scope:</strong> For Samsung Health-related issues, please contact Samsung Electronics customer support. Our development team cannot provide technical support related to Samsung Health.</li>
+            </ul>
+        </div>
+
+        <h2>8. In-App Purchases</h2>
         <p>Some premium themes within the app may be available for purchase. Payments are processed through the Google Play Store. Runboard does not collect or store any of your credit card or payment information.</p>
         
-        <h2>7. User Rights</h2>
+        <h2>9. User Rights</h2>
         <p>Since all data resides only on your device, you can permanently delete all your data at any time by simply uninstalling the application.</p>
 
-        <h2>8. Children's Privacy</h2>
+        <h2>10. Children's Privacy</h2>
         <p>Runboard is not intended for use by children under the age of 13, and we do not knowingly collect personal information from them.</p>
 
-        <h2>9. Changes to This Privacy Policy</h2>
+        <h2>11. Changes to This Privacy Policy</h2>
         <p>If this policy changes, we will notify users through an in-app notice or other reasonable methods.</p>
 
-        <h2>10. Contact Us</h2>
+        <h2>12. Contact Us</h2>
         <p>If you have any questions about your privacy, please contact us.<br>
         - Email: amaredesignkr@gmail.com</p>
     </div>
